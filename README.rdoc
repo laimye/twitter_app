@@ -5,6 +5,7 @@
 Twitter_app is a simplified version of Twitter that allows to read, create, update, and delete messages.
 Twitter, the original app, is an online news and social networking service where users post and read messages restricted to 140-characters, which are called "tweets". 
 
+
 ## TECHNOLOGIES USED
 
 Ruby on Rails
