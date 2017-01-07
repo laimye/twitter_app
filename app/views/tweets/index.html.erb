@@ -1,0 +1,22 @@
+<p class="notice" id="notice"><%= notice %></p>
+
+<!-- <a href="/tweets?sort=handle">Sort by Handle</a> -->
+<!-- <a href="@updated.tweet">Sort by Time</a> -->
+
+<div class="container">
+<h1>Welcome to Twitter</h1>
+
+
+    <% @tweets.each do |tweet| %>
+		<div class="panel panel-info">
+		  <div class="panel-heading">
+		    <div class="panel-title pull-left"><strong>@<%= link_to "#{tweet.handle}", tweet_path(tweet) %></strong></div>
+		    <div class="panel-title pull-right"><%= tweet.updated_at.localtime.strftime('%d %b %Y at %l:%M:%S')%></div>
+		  </div>
+		  <div class="panel-body">
+		    <%= tweet.content %>
+		  </div>
+		</div>
+    <% end %>
+
+</div>
