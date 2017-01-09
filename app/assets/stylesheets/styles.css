@@ -64,3 +64,14 @@ h1 {
 	font-size: 18px;
 	color: #4D9934;
 }
+
+.glyphicon {
+	font-size: 1.8em;
+}
+
+.my-background {
+	background-image: url('pic8.jpg');
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

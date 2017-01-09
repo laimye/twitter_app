@@ -3,8 +3,11 @@ class TweetsController < ApplicationController
 	before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@tweets = Tweet.all
-		# @updated.tweet = Tweet.all.order(updated_at: :desc)
+		if params[:sort]
+			@tweets = Tweet.order(params[:sort])
+		else
+			@tweets = Tweet.all
+		end
 	end
 
 	def show
